@@ -1,0 +1,137 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+@mixin media-breakpoint-up($name, $breakpoints: $grid-breakpoints) {
+    $min: map-get($breakpoints, $name);
+    @media (min-width: $min) {
+        @content;
+    }
+}
+
+.bam-ad-container.pick-ad {
+    background-image: url(../images/player.jpg);
+    background-repeat: no-repeat;
+    background-color: #000;
+    color: #fff;
+
+    @include media-breakpoint-up(xl) {
+        display: flex;
+        width: 713px !important;
+        max-width: none !important; 
+    }
+
+    .content {
+        min-height: 140px;
+
+        @include media-breakpoint-up(xl) {
+            width: 530px;
+        }
+    }
+
+    .countdown-container {
+        min-height: 140px;
+        padding-top: 30px;
+        padding-left: 90px;
+        text-align: center;
+
+        @include media-breakpoint-up(sm) {
+            padding-top: 10px;
+            padding-left: 169px;
+            display: flex;
+            min-height: auto;
+        }
+
+        .timer div {
+            display: inline-block;
+            background: #ff1805;
+            padding: 7px 0px 9px;
+            width: 50px;
+            height: 50px;
+
+            span {
+                display: block;
+                font-size: 11px;
+                text-transform: uppercase;
+                line-height: 1em;
+
+                &.num {
+                    font-size: 26px;
+                }
+            }
+        }
+
+        .disclaimer {
+            padding: 0px 10px;
+            font-size: 13px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @include media-breakpoint-up(sm) {
+                margin-left: 22px;
+                padding: 0;
+                width: 100px;
+                text-align: left;
+            }
+        }
+    }
+
+    .title-container {
+        text-align: center;
+        padding: 20px;
+        line-height: 1em;
+
+        @include media-breakpoint-up(sm) {
+            padding: 14px 0 0 169px;
+            text-align: left;
+        }
+        
+        .title {
+            color: #fee801;
+            font-weight: bold;
+            margin-bottom: 11px;
+            font-size: 24px;
+        }
+
+        .tagline {
+            font-size: 14px;
+        }
+    }
+
+    .call-to-action {
+        padding: 26px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 12px;
+
+        @include media-breakpoint-up(xl) {
+            width: 183px;
+            padding: 26px 0 0;
+        }
+
+        button {
+            background-color: #e74c3c;
+            color: #000;
+            margin-bottom: 18px;
+            border-radius: 5px;
+            font-size: 18px;
+            padding: 16px 22px;
+        }
+
+        div {
+            line-height: 1.2;
+
+            @include media-breakpoint-up(xl) {
+                width: 100px;
+                margin: 0 auto;
+            }
+        }
+    }
+}

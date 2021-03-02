@@ -1,0 +1,16 @@
+{
+    "name": "c24o/bam-ads-system",
+    "description": "Ads system for BAM",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Carlos Guzmán",
+            "email": "caralbgm@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {"BamAdsSystem\\": "includes/"}
+    }
+}
