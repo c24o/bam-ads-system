@@ -1,0 +1,1 @@
+<div><i><?= __('Invalid Ad', 'bam-ads-system'); ?></i></div>
