@@ -14,11 +14,21 @@ $grid-breakpoints: (
     }
 }
 
+@font-face {
+    font-family: bamAdobe;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: bamHelveticaBd;
+    src: url(../fonts/HelveticaNeueLTProBd.woff);
+}
+
 .bam-ad-container.pick-ad {
     background-image: url(../images/player.jpg);
     background-repeat: no-repeat;
     background-color: #000;
     color: #fff;
+    font-family: bamHelveticaBd;
 
     @include media-breakpoint-up(xl) {
         display: flex;
@@ -62,6 +72,7 @@ $grid-breakpoints: (
 
                 &.num {
                     font-size: 26px;
+                    font-family: bamAdobe;
                 }
             }
         }
@@ -98,6 +109,7 @@ $grid-breakpoints: (
             font-weight: bold;
             margin-bottom: 11px;
             font-size: 24px;
+            font-family: bamAdobe;
         }
 
         .tagline {
@@ -123,6 +135,7 @@ $grid-breakpoints: (
             border-radius: 5px;
             font-size: 18px;
             padding: 16px 22px;
+            font-family: bamAdobe;
         }
 
         div {

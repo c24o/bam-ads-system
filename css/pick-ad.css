@@ -1,8 +1,17 @@
+@font-face {
+  font-family: bamAdobe;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: bamHelveticaBd;
+  src: url(../fonts/HelveticaNeueLTProBd.woff);
+}
 .bam-ad-container.pick-ad {
   background-image: url(../images/player.jpg);
   background-repeat: no-repeat;
   background-color: #000;
   color: #fff;
+  font-family: bamHelveticaBd;
 }
 @media (min-width: 1200px) {
   .bam-ad-container.pick-ad {
@@ -48,6 +57,7 @@
 }
 .bam-ad-container.pick-ad .countdown-container .timer div span.num {
   font-size: 26px;
+  font-family: bamAdobe;
 }
 .bam-ad-container.pick-ad .countdown-container .disclaimer {
   padding: 0px 10px;
@@ -81,6 +91,7 @@
   font-weight: bold;
   margin-bottom: 11px;
   font-size: 24px;
+  font-family: bamAdobe;
 }
 .bam-ad-container.pick-ad .title-container .tagline {
   font-size: 14px;
@@ -104,6 +115,7 @@
   border-radius: 5px;
   font-size: 18px;
   padding: 16px 22px;
+  font-family: bamAdobe;
 }
 .bam-ad-container.pick-ad .call-to-action div {
   line-height: 1.2;
